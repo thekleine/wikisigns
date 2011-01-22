@@ -1,7 +1,9 @@
 %h1#title
   = @word.word
-
-= render(:partial => 'table', :locals => {:word => @word})
+  
+#main-carpet
+  = render(:partial => 'table', :locals => {:word => @word})
+  %canvas{:id => 'carpet-canvas', :height => '442', :width => '470', :'data-src' => 'javascripts/processing/word.pjs'}
 
 %h2#command
   Einfach was eingeben:

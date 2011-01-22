@@ -1,6 +1,7 @@
 // Initialize behaviours
 function initializeBehaviours() {
   addFocusTextFieldBehaviour();
+  addHideElementsForCanvasBehaviour();
 }
 
 function addFocusTextFieldBehaviour() {
@@ -9,3 +10,8 @@ function addFocusTextFieldBehaviour() {
 
 // Loads functions after DOM is ready
 $(document).ready(initializeBehaviours);
+
+
+function addHideElementsForCanvasBehaviour() {
+  $('#main-carpet').children('.carpet').hide();
+}
